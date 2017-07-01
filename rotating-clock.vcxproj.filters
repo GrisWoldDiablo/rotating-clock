@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="rotating-clock.ino" />
+    <None Include="FidgetSpinner.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.rotating-clock.vsarduino.h">
