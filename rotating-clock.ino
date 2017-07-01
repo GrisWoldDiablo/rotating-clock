@@ -9,16 +9,9 @@
 
 */
 
-#include <Tinyfont.h>
-#include <Arduino.h>
+
 #include <Arduboy2.h>
-#include "bitmaps.h"
-#include <math.h>
-
 Arduboy2 arduboy;
-Tinyfont ArdTiny = Tinyfont(arduboy.sBuffer, Arduboy2::width(), Arduboy2::height());
-
-
 int a = 0;
 
 unsigned long lastSecond = 1000;
@@ -28,12 +21,8 @@ unsigned long secondInterval = 1000;
 
 void setup() 
 {
-
 	arduboy.boot();
-	arduboy.clear();
-	arduboy.display();
 	arduboy.setFrameRate(60);
-
 }
 
 void loop() 

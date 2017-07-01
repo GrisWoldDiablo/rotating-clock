@@ -21,8 +21,5 @@
     <ClInclude Include="__vm\.rotating-clock.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bitmaps.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
