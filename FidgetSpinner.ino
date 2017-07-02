@@ -21,7 +21,8 @@ unsigned long secondInterval = 1000;
 
 void setup() 
 {
-	arduboy.boot();
+	arduboy.begin();
+	arduboy.flashlight();
 	arduboy.setFrameRate(60);
 }
 
@@ -68,6 +69,14 @@ void loop()
 		{
 			a = 0;
 		}
+		if (a <= 30)
+		{
+			arduboy.setRGBled(0, 1, 0);
+		}
+		else
+		{
+			arduboy.setRGBled(0, 0, 0);
+		}
 
 	}
 	else if (arduboy.pressed(DOWN_BUTTON))
@@ -85,7 +94,20 @@ void loop()
 		{
 			a = 59;
 		}
+		if (a <= 30)
+		{
+			arduboy.setRGBled(1, 0, 0);
+		}
+		else
+		{
+			arduboy.setRGBled(0, 0, 0);
+		}
 	}
+	else
+	{
+		arduboy.setRGBled(0, 0, 0);
+	}
+	
 
 	arduboy.display();
 }
